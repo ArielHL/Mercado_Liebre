@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Logging</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/9be5a7a60e.js" crossorigin="anonymous"></script>
 </head>
@@ -33,25 +33,32 @@
 
     </header>
 
-    <main>
+    <main class="main-loggin">
         <form class="register-form" action="/" method="post">
             <!-- nombre usuario -->
             <div class="form-control">
-                <label for="UserName">Nombre Usuario</label>
+                <div class="name-label">
+                    <label for="UserName">Nombre Usuario</label>
+                </div>
                 <input type="text" name="UserName" id="UserName" placeholder="Nombre Usuario" required>
             </div>
 
 
             <!-- contraseña -->
             <div class="form-control">
-                <label for="password">Contraseña</label>
+                <div class="Password-label">
+                    <label for="password">Contraseña </label>
+                    <span><i class="fa-sharp fa-solid fa-eye"></i> Mostrar</span>
+                </div>
                 <input type="password" name="password" id="password" required>
             </div>
-
+            <div class="Forgot-password">
+                <a href="#">Olvidaste la Contraseña?</a>
+            </div>
             <!-- boton enviar -->
             <div class="button-control">
                 <button type="submit">Logear</button>
-               
+
             </div>
 
         </form>

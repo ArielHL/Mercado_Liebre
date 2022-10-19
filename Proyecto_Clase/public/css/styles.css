@@ -37,7 +37,7 @@ body {
 .main-header-top-bar{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; 
+    /* flex-wrap: wrap;  */
 }
 
 .top-bar-container{
@@ -68,7 +68,7 @@ body {
     padding: 15px 0;
     border-radius: 8px;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     margin:auto;
 }
 
@@ -245,6 +245,14 @@ footer h4 {
 main {
     width: 90vw;
     margin: auto;
+
+}
+
+.main-loggin{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .articulos {
@@ -286,12 +294,15 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-    margin: 15px 10px;
-    background: rgb(246, 245, 245);
+    margin: 15px 0px;
+    background:#c1cacd;
+    max-width: 400px;
+    width: 75%;
+    
 }
 
 .register-form div{
-  margin: 5px 8px;
+  margin: 5px 0px;
 }
 .form-control, form-control-option{
     display: flex;
@@ -323,6 +334,17 @@ main {
     margin-top: 10px;
 }
 
+
+.Password-label,
+.name-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Forgot-password{
+    text-align: center;
+}
 
 @media (min-width: 726px){
     /* Header */
@@ -357,7 +379,7 @@ main {
     }
     .search-bar{
         display:flex;
-        padding: 15px;
+        
     }
     main section article .product {
         display: block;
@@ -411,27 +433,12 @@ main {
     footer div{
         margin : 10px 0;
     }
-    .form-control{
-   
-        flex-direction: row;
-        justify-content:flex-start;
-        margin: 5px 0;
-    }
 
-    .form-control label{
-        width: 45%;
+    .register-form{
+        max-width: 400px;
     }
-
-    .form-control input{
-        width: 55%;
-        max-width: 430px;
-    }
-    /* .form-option{
-        display:flex;
-        flex-direction: row;
-        justify-content:space-evenly;    } */
-
 }
+
 
 
 
@@ -503,6 +510,5 @@ main {
 
         background-color: #0022AA;
         border-radius: 35%;
-
+    }
 }
-
